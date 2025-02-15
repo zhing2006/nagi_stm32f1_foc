@@ -1,3 +1,6 @@
 [submodule "ThirdParties/CMSIS-DSP"]
 	path = ThirdParties/CMSIS-DSP
 	url = https://github.com/ARM-software/CMSIS-DSP.git
+[submodule "User/nagi_foc"]
+	path = User/nagi_foc
+	url = https://github.com/zhing2006/nagi_foc.git

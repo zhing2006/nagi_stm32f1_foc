@@ -55,10 +55,14 @@ file(GLOB_RECURSE DSP_SOURCES "${CMAKE_SOURCE_DIR}/ThirdParties/CMSIS-DSP/Source
 # Get all *.c source files recursively from 'User/Src'
 file(GLOB_RECURSE USER_SOURCES "${CMAKE_SOURCE_DIR}/User/Src/*.c")
 
+# Get all *.c source files recursively from 'User/nagi_foc/Src'
+file(GLOB_RECURSE NAGI_FOC_SOURCES "${CMAKE_SOURCE_DIR}/User/nagi_foc/Src/*.c")
+
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
     ${DSP_SOURCES}
+    ${NAGI_FOC_SOURCES}
     ${USER_SOURCES}
 )
 
@@ -67,6 +71,7 @@ target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
     "${CMAKE_SOURCE_DIR}/ThirdParties/CMSIS-DSP/Include"
     "${CMAKE_SOURCE_DIR}/ThirdParties/CMSIS-DSP/PrivateInclude"
+    "${CMAKE_SOURCE_DIR}/User/nagi_foc/Inc"
     "${CMAKE_SOURCE_DIR}/User/Inc"
 )
 
