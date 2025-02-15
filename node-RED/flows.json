@@ -1,0 +1,27 @@
+[
+    {
+        "id": "d2e23e9c2463d8bc",
+        "type": "csv",
+        "z": "c90718a5adf82f9f",
+        "name": "data",
+        "spec": "rfc",
+        "sep": ",",
+        "hdrin": "",
+        "hdrout": "none",
+        "multi": "one",
+        "ret": "\\n",
+        "temp": "logic_angle,rotate_speed,di,qi",
+        "skip": "0",
+        "strings": true,
+        "include_empty_strings": "",
+        "include_null_values": "",
+        "x": 270,
+        "y": 160,
+        "wires": [
+            [
+                "dccded12b308cf50",
+                "b4d3612b7952ebc1"
+            ]
+        ]
+    }
+]
